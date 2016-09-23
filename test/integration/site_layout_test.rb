@@ -12,5 +12,11 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "title", full_title("Contact")
     get signup_path
     assert_select "title", full_title("Sign up")
+
+    log_in_as(users(:rui))
+    assert is_logged_in?
+    get root_path
+    assert_select "a[href=?]", users_path
+
   end
 end
