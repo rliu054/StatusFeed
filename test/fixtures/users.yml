@@ -20,6 +20,12 @@ lana:
   activated: true
   activated_at: <%= Time.zone.now %>
 
+diaosi:
+  name: Diao Si
+  email: ds@gmail.com
+  activated: true
+  password_digest: <%= User.digest('password') %>
+
 <% 30.times do |n| %>
 user_<%= n %>:
   name: <%= "User #{n}" %>
