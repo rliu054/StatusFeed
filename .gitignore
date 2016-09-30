@@ -29,3 +29,6 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+
+# Ignore uploaded test images.
+/public/uploads
