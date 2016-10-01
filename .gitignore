@@ -32,3 +32,6 @@
 
 # Ignore uploaded test images.
 /public/uploads
+
+# Ignore swp files.
+*.swp
